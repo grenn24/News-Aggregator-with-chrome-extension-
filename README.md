@@ -1,4 +1,4 @@
-# News-Aggregator-with-chrome-extension-
+# News Aggregator (with chrome extension)
 
 News Aggregator webpage that displays news articles from various categories, developed using front-end HTML and back-end Python using Flask framework
 
