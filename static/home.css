@@ -128,7 +128,7 @@ body {
     transform: translateY(-5px);
   }
 
-/* Styling for news images contained inside the card */
+/* Styling for news article images contained inside the card */
 .card-img img {
     height: 100%;
     width: 100%;
@@ -157,3 +157,16 @@ body {
     min-height: 100%;
     object-fit: cover;
   }
+
+/* Styling for card body contained news article description and link */
+.card-body-1 {
+    padding-bottom: 15px;
+    width: 60%
+  }
+
+.card-body-2 {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 60%
+  }
+
