@@ -14,7 +14,7 @@ News Aggregator webpage that displays news articles from various categories, dev
 Flask library is imported to create an application.\
 Requests library is imported to make HTTP requests to a news api server.
 
-Two main routes defined:
+Two main routes are defined:
 
 1. **Home Route '/'**
 
