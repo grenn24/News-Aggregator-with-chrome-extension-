@@ -27,11 +27,11 @@
 </nav>    
 
 <main>
-    <!-- Latest news section of home page -->
+    <!-- Latest news section of the home page -->
     <section>
         <h2 style="margin-left: 4.7%; font-size: 2.5em">Latest News</h2>
 
-        <!-- Display each news article under general category in horizontal card layout -->
+        <!-- Display each news article under general category in a horizontal card layout -->
         {% for new in latest_news %}
 
         <div class="card-container-1">
@@ -70,6 +70,7 @@
 
     </section>    
     
+    <!-- Other news categories section of the home page -->
     <section>
 
         <!-- Iterate over each specified news category in the news_columns list -->
@@ -103,3 +104,37 @@
         {% endfor %}
 
     </section>
+    
+    <!-- More News section of the home page -->
+    <section>
+        <!-- Search bar for users to explore different news topic not listed in the home page -->
+        <h2 style="margin-left: 4.9%">More News</h2>
+        <form class="search-container" action="/news/" method="get" style="text-align: center" onsubmit="event.preventDefault(); location.href=this.action+encodeURIComponent(document.getElementById('topic').value)">
+            <input type="text" id="topic" placeholder="Search for a news topic">
+            <i class="cursor-icon"></i>
+            <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
+        </form>
+    </section>
+  </main>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Dynamic footer that displays author name and source code -->    
+<footer>
+    <!-- File path for external javascript to add dynamic functionality for the footer -->
+    <script src="/static/footer_home.js"></script>
+    <!-- Create a partition for the footer using container -->
+    <div class="footer-left">
+        &copy; Hoo Di Heng | All rights reserved | 2023
+    </div>
+    <div class="footer-right">
+        <a href="https://github.com/grenn24" target="_blank">
+            <button>Visit My GitHub</button>
+        </a>
+    </div>
+</footer>  
