@@ -39,16 +39,27 @@ def home():
 
     return render_template('home.html', news_columns=news_columns, latest_news=latest_news)
 
-# Define route for a specific news category        
+# Define route for a specific news category         
 @app.route('/news/<topic>')
-def news(topic):
-    # Retrieve articles in the specified news category        
-    params = {'category': topic, 'apiKey': api_key2, 'language': 'en'}
+def topic(topic):
+    # Retrieve articles in the specified news category     
+    params = {'category': topic, 'apiKey': api_key1, 'language': 'en'}
     response = requests.get(NEWS_API_ENDPOINT, params=params)
     articles = response.json().get('articles')
-    
-    # Render the html template with the articles     
+        
+    # Render the html template with the articles       
     return render_template('news.html', articles=articles, topic=topic.capitalize())
+
+# Define route for a specific news keyword          
+@app.route('/news/search/<keyword>')
+def keyword(keyword):
+    # Retrieve articles in the specified news keyword
+    params = {'q': keyword, 'apiKey': api_key1, 'language': 'en'}
+    response = requests.get(NEWS_API_ENDPOINT2, params=params)
+    articles = response.json().get('articles')
+        
+    # Render the html template with the articles    
+    return render_template('search.html', articles=articles, keyword=keyword.capitalize())        
 
 # Define route to access javascript styling file for footer        
 @app.route('/news/static/footer_news.js')
