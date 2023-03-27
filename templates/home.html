@@ -76,10 +76,11 @@
         <!-- Iterate over each specified news category in the news_columns list -->
         {% for column in news_columns %}
 
+        <!-- News Category Headline -->
         <h2 class="col-md-12" style="margin-left: 4.9%; font-size: 1.7em">{{ column.category }}</h2>
-        <div class="row">
-
+        
             <!-- Iterate over each news article in the specific news category before displaying it in a row of 3 cards -->            
+        <div class="row">
             {% for article in column.articles %}
 
             <div class="column">
