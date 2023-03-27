@@ -61,3 +61,10 @@ a.nav {
 a.nav:hover {
       background-color: #bd9102;
   }
+
+/* Styling for elements in the body section of the webpage */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	padding: 0;
+  }
