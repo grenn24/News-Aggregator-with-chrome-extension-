@@ -1,1 +1,77 @@
+<html lang="en">
 
+<!-- Head section defines webpage title, css styling directories, typeface source -->  
+<head>
+    <meta charset="UTF-8">
+    <title>News Aggregator Website</title>
+    <link rel="stylesheet" href="/static/news.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+    
+<body>
+<header>
+    <h1>News Aggregator</h1>
+</header>
+
+<!-- Navigation pane to access different news categories -->    
+<nav>
+    <ul>
+        <li><a href="/" class="nav">Home</a></li>
+        <li><a href="/news/politics" class="nav">Politics</a></li>
+        <li><a href="/news/business" class="nav">Business</a></li>
+        <li><a href="/news/technology" class="nav">Technology</a></li>
+        <li><a href="/news/sports" class="nav">Sports</a></li>
+        <li><a href="/news/entertainment" class="nav">Entertainment</a></li>
+    </ul>
+</nav> 
+
+<main>
+    <div class="column">
+        
+        <!-- Specified News Category Headline -->
+        <h2 style="font-size: 2.5em; margin-top: 1.5em;">News articles for {{topic}} </h2>
+        
+        <!-- Iterate over each news article for the specified category before displaying it in a single-card column -->
+        {% for article in articles %}
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-img">
+                    <img src="{{ article['urlToImage'] }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{ article.title }}</h3>
+                    <p class="card-text">{{ article.description }}</p>
+                    <a class="button" href="{{ article.url }}">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</main>
+</body>    
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Dynamic footer that displays author name and source code -->    
+<footer>
+    <!-- File path for external javascript to add dynamic functionality for the footer -->
+    <script src="/static/footer_home.js"></script>
+    <!-- Create a partition for the footer using container -->
+    <div class="footer-left">
+        &copy; Hoo Di Heng | All rights reserved | 2023
+    </div>
+    <div class="footer-right">
+        <a href="https://github.com/grenn24" target="_blank">
+            <button>Visit My GitHub</button>
+        </a>
+    </div>
+</footer>  
+</html>
