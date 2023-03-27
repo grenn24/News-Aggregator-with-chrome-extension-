@@ -25,3 +25,31 @@
         <li><a href="/news/entertainment" class="nav">Entertainment</a></li>
     </ul>
 </nav> 
+
+<main>
+    <div class="column">
+        
+        <!-- Specified News Category Headline -->
+        <h2 style="font-size: 2.5em; margin-top: 1.5em;">News articles for {{topic}} </h2>
+        
+        <!-- Iterate over each news article for the specified category before displaying it in a single-card column -->
+        {% for article in articles %}
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-img">
+                    <img src="{{ article['urlToImage'] }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{ article.title }}</h3>
+                    <p class="card-text">{{ article.description }}</p>
+                    <a class="button" href="{{ article.url }}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</main>
+</body>    
