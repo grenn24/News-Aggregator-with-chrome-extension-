@@ -8,7 +8,7 @@ News Aggregator webpage that displays news articles from various categories, dev
 - Displays each article in a modern card layout for easy viewing
 - Allows users to search for specific news articles based on different key words as filters
 
-# Desription
+# Description
 
 ## Python Code
 Flask library is imported to create an application
