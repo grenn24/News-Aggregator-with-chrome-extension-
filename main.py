@@ -25,4 +25,14 @@ def home():
     #Add them into the latest_news list
     latest_news.append({
         'latests': latest_articles
-    })
+    }}
+    
+    #Retrieve 3 articles from the other categories respectively and add them into the news_column list    
+    for category in categories:
+        params = {'category': category, 'apiKey': api_key2, 'language': 'en'}
+        response = requests.get(NEWS_API_ENDPOINT, params=params)
+        articles = response.json().get('articles', [])[:3]
+        news_columns.append({
+            'category': category.capitalize(),
+            'articles': articles
+        })    
