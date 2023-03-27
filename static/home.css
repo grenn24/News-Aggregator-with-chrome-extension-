@@ -68,3 +68,25 @@ body {
     margin: 0;
 	padding: 0;
   }
+
+/* Styling for rows and columns containing cards */
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 2.3%;
+  }
+
+.row {
+    padding-left: 2.8%;
+    width: 98%;
+  }
+
+.row-1 {
+    width: 100%;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
