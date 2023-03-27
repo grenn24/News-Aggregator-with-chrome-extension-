@@ -43,7 +43,7 @@ In the news and search page, a similar for-loop function is used to iterate over
 # Requirements
 - Python 3.6 or higher
 - Flask installation
-- Reqiests library
+- Requests library
 - Unique NewsAPI key (or any News Endpoint URL)
 
 Application Web Host: https://boiled-bubbly-poultry.glitch.me/
