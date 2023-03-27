@@ -205,3 +205,15 @@ input[type=text]:focus {
     outline: none;
     box-shadow: 0 0 6px #4CAF50;
   }
+
+/* Styling for search bar icon */
+.search-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    bottom: 90%;
+    right: 30.5%;
+    transform: translateY(40%);
+    transition: all 0.3s ease;
+    opacity: 50%;
+  }
