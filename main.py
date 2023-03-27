@@ -38,3 +38,14 @@ def home():
         })    
 
     return render_template('home.html', news_columns=news_columns, latest_news=latest_news)
+
+# Define route for a specific news category        
+@app.route('/news/<topic>')
+def news(topic):
+    #Retrieve articles in the specified news category        
+    params = {'category': topic, 'apiKey': api_key2, 'language': 'en'}
+    response = requests.get(NEWS_API_ENDPOINT, params=params)
+    articles = response.json().get('articles')
+    
+    #Render the html template with the articles     
+    return render_template('news.html', articles=articles, topic=topic.capitalize())
