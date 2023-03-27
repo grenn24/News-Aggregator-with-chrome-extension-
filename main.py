@@ -16,3 +16,13 @@ def home():
     
     news_columns = []
     latest_news = []
+    
+    #Retrieve news articles in the 'general' category
+    params = {'category': 'general', 'country': 'us', 'apiKey': api_key2, 'language': 'en'}
+    response = requests.get(NEWS_API_ENDPOINT, params=params)
+    latest_articles = response.json().get('articles', [])[:2]
+    
+    #Add them into the latest_news list
+    latest_news.append({
+        'latests': latest_articles
+    })
