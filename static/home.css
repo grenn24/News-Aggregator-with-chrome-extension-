@@ -119,7 +119,7 @@ body {
     display: flex;
   }
 
-/* Add animated effect to card when hovering cursor over it */
+/* Add subtle animated effect to card when hovering cursor over it */
 .card:hover {
     transform: translateY(-5px);
   }
@@ -170,3 +170,18 @@ body {
     width: 60%
   }
 
+/* Styling for news article hyperlink inside card body container */
+a.button:link, a.button:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+  }
+
+a.button:hover, a.button:active {
+    background-color: #bd3d2a;
+  }
