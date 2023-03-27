@@ -40,3 +40,5 @@ In the news page, a similar for-loop function is used to iterate over each news 
 - Flask installation
 - Reqiests library
 - Unique NewsAPI key (or any News Endpoint URL)
+
+Application Web Host: https://boiled-bubbly-poultry.glitch.me/
