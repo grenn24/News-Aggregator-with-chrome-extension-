@@ -18,7 +18,7 @@ Two main routes defined:
 
 1. **Home route '/'**
 
-<br> Creates a list of different news categories, and fetches a unique list of news articles from the news api, grouping them based on category\
+Creates a list of different news categories, and fetches a unique list of news articles from the news api, grouping them based on category\
 A separate request is made for latest_news list under 'general' category\
 The list of news articles are transferred over to the home.html template as arguments
 
