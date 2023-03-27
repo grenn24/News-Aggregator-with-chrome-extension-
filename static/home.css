@@ -1,1 +1,8 @@
+/* Set box-sizing property and hide scrollbar for all elements in the webpage */
+* {
+    box-sizing: border-box;
+  }
 
+*::-webkit-scrollbar {
+    display: none;
+  }
