@@ -25,3 +25,39 @@ h1 {
       margin: 0;
       font-size: 2.5rem;
   }
+
+/* Styling for the navigation bar links */
+nav {
+      background-color: #d6a100;
+      color: #fff;
+      padding: 10px 20px;
+  }
+
+nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+  }
+
+nav li {
+      flex-grow: 1;
+  }
+
+a.nav {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15em;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+  }
+
+a.nav:hover {
+      background-color: #bd9102;
+  }
