@@ -31,7 +31,7 @@ In the home page, two nested for-loops are used to iterate over each news catego
 A search form at the bottom of the webpage sends a HTML Get request to the /news/<topic> URL with the user input as the topic parameter. The home page is then rerouted to the news page displayed a list of curated articles belonging to the user-specified category\
 In the news page, a similar for-loop function is used to iterate over each news article before displaying them in a single-column card format
 
-## Requirements
+# Requirements
 - Python 3.6 or higher
 - Flask installation
 - Reqiests library
