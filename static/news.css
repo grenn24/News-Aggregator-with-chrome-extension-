@@ -100,3 +100,18 @@ body {
     width: 100%;
     object-fit: cover;
   }
+
+/* Styling for news article hyperlink contained inside card */
+a.button:link, a.button:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+  }
+
+a.button:hover, a.button:active {
+    background-color: red;
+  }
