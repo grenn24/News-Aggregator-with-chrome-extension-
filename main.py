@@ -36,3 +36,5 @@ def home():
             'category': category.capitalize(),
             'articles': articles
         })    
+
+    return render_template('home.html', news_columns=news_columns, latest_news=latest_news)
