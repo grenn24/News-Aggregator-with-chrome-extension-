@@ -185,3 +185,23 @@ a.button:link, a.button:visited {
 a.button:hover, a.button:active {
     background-color: #bd3d2a;
   }
+
+/* Styling for search bar at bottom of webpage with colour transitions when clicked */
+input[type=text] {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease
+  }
+
+input[type=text]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 6px #4CAF50;
+  }
