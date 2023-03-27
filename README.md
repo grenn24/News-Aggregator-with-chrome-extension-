@@ -18,14 +18,14 @@ Two main routes defined:
 
 1. **Home Route '/'**
 
-Creates a list of different news categories, and fetches a unique list of news articles from the news api, grouping them based on category\
-A separate request is made for latest_news list under 'general' category\
-The list of news articles are transferred over to the home.html template as arguments
+Creates a list of different news categories, and fetches a unique list of news articles from the news api, grouping them based on category.\
+A separate request is made for latest_news list under 'general' category.\
+The list of news articles are transferred over to the home.html template as arguments.
 
 2. **News Route '/News/[topic]'**
 
-Fetches a list of news articles belonging to a specific topic, either specified by user or listed under navigation pane\
-News topic parameter and article list are passed down to the news.html template as arguments
+Fetches a list of news articles belonging to a specific topic, either specified by user or listed under navigation pane.\
+News topic parameter and article list are passed down to the news.html template as arguments.
 
 ## HTML Code
 Uses flexbox design to achieve the desired card layout, etc. single-columns & columns of three respectively.\
