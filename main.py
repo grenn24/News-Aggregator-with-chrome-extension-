@@ -54,6 +54,10 @@ def news(topic):
 @app.route('/news/static/footer_news.js')
 def news_static_footer_news():
     return app.send_static_file('footer_news.js')
+        
+@app.route('/news/search/static/footer_news.js')
+def news_search_static_footer_news():
+    return app.send_static_file('footer_news.js')        
 
 # Run the Flask application
 if __name__ == '__main__':
