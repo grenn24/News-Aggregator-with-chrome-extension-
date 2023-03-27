@@ -128,3 +128,32 @@ body {
     transform: translateY(-5px);
   }
 
+/* Styling for news images contained inside the card */
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+.img-square-wrapper {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+.img-square-wrapper-1 {
+    width: 40%;
+    padding-left: 20px;
+    order: 2;
+  }
+
+.img-square-wrapper img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+.img-square-wrapper-1 img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
