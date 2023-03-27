@@ -93,3 +93,10 @@ body {
 .card:hover {
     transform: translateY(-5px);
   }
+
+/* Styling for news article images contained inside the card */
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
