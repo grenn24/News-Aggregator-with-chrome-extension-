@@ -21,7 +21,7 @@ Two main routes defined:
 A separate request is made for latest_news list under 'general' category\
 The list of news articles are transferred over to the home.html template as arguments\
 
-2. **News route '/News/[topic]'**\
+2. **News route '/News/[topic]'** \
 Fetches a list of news articles belonging to a specific topic, either specified by user or listed under navigation pane\
 News topic parameter and article list are passed down to the news.html template as arguments
 
