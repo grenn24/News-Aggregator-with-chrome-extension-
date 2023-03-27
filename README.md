@@ -12,7 +12,7 @@ News Aggregator webpage that displays news articles from various categories, dev
 
 ## Python Code
 Flask library is imported to create an application
-Requests library is imported to make HTTP requests to a news api server
+<br> Requests library is imported to make HTTP requests to a news api server
 
 Two main routes defined:
 
