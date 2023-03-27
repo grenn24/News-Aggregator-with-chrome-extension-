@@ -25,7 +25,7 @@ def home():
     # Add them into the latest_news list
     latest_news.append({
         'latests': latest_articles
-    }}
+    })
     
     # Retrieve 3 articles from the other categories respectively and add them into the news_column list    
     for category in categories:
