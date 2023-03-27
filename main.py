@@ -18,7 +18,7 @@ def home():
     latest_news = []
     
     # Retrieve news articles in the 'general' category
-    params = {'category': 'general', 'country': 'us', 'apiKey': api_key2, 'language': 'en'}
+    params = {'category': 'general', 'country': 'us', 'apiKey': api_key1, 'language': 'en'}
     response = requests.get(NEWS_API_ENDPOINT, params=params)
     latest_articles = response.json().get('articles', [])[:2]
     
@@ -29,7 +29,7 @@ def home():
     
     # Retrieve 3 articles from the other categories respectively and add them into the news_column list    
     for category in categories:
-        params = {'category': category, 'apiKey': api_key2, 'language': 'en'}
+        params = {'category': category, 'apiKey': api_key1, 'language': 'en'}
         response = requests.get(NEWS_API_ENDPOINT, params=params)
         articles = response.json().get('articles', [])[:3]
         news_columns.append({
@@ -43,7 +43,7 @@ def home():
 @app.route('/news/<topic>')
 def topic(topic):
     # Retrieve articles in the specified news category     
-    params = {'category': topic, 'apiKey': api_key1, 'language': 'en'}
+    params = {'category': topic, 'apiKey': api_key2, 'language': 'en'}
     response = requests.get(NEWS_API_ENDPOINT, params=params)
     articles = response.json().get('articles')
         
@@ -54,7 +54,7 @@ def topic(topic):
 @app.route('/news/search/<keyword>')
 def keyword(keyword):
     # Retrieve articles in the specified news keyword
-    params = {'q': keyword, 'apiKey': api_key1, 'language': 'en'}
+    params = {'q': keyword, 'apiKey': api_key2, 'language': 'en'}
     response = requests.get(NEWS_API_ENDPOINT2, params=params)
     articles = response.json().get('articles')
         
