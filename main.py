@@ -54,3 +54,7 @@ def news(topic):
 @app.route('/news/static/footer_news.js')
 def news_static_footer_news():
     return app.send_static_file('footer_news.js')
+
+# Run the Flask application
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0',port=9000, threaded=True)        
