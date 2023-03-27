@@ -24,8 +24,13 @@ The list of news articles are transferred over to the home.html template as argu
 
 2. **News Route '/News/[topic]'**
 
-Fetches a list of news articles belonging to a specific topic, either specified by user or listed under navigation pane.\
+Fetches a list of news articles belonging to a specific topic listed under navigation pane.\
 News topic parameter and article list are passed down to the news.html template as arguments.
+
+3. **News Route '/News/[topic]'**
+
+Fetches a list of news articles belonging to a specific keyword based on search input specified by the user.\
+News keyword parameter and article list are passed down to the search.html template as arguments.
 
 ## HTML Code
 Uses flexbox design to achieve the desired card layout, etc. single-columns & columns of three respectively.\
@@ -33,7 +38,7 @@ In the home page, two nested for-loops are used to iterate over each news catego
 This allows for new categories to be added or deleted from the webpage easily with minimal change in code.\
 A search form at the bottom of the webpage sends a HTML Get request to the /news/[topic] URL with the user input as the topic parameter.\
 The home page is then rerouted to the news page displaying a list of curated articles belonging to the user-specified category.\
-In the news page, a similar for-loop function is used to iterate over each news article before displaying them in a single-column card format.
+In the news and search page, a similar for-loop function is used to iterate over each news article before displaying them in a single-column card format.
 
 # Requirements
 - Python 3.6 or higher
