@@ -10,3 +10,18 @@
 img {
     max-width: 100%;
   }
+
+/* Styling for the header section of the webpage */
+header {
+      background-color: #b08400;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-family: Open Sans;
+      font-style: italic;
+  }
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
