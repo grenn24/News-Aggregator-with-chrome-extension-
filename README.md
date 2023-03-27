@@ -8,9 +8,9 @@ News Aggregator webpage that displays news articles from various categories, dev
 - Displays each article in a modern card layout for easy viewing
 - Allows users to search for specific news articles based on different key words as filters
 
-## Desription
+# Desription
 
-# Python Code
+## Python Code
 Flask library is imported to create an application
 Requests library is imported to make HTTP requests to a news api server
 
@@ -25,13 +25,13 @@ The list of news articles are transferred over to the home.html template as argu
 Fetches a list of news articles belonging to a specific topic, either specified by user or listed under navigation pane
 News topic parameter and article list are passed down to the news.html template as arguments
 
-# HTML Code
+## HTML Code
 Uses flexbox design to achieve the desired card layout, etc. single-columns & columns of three respectively
 In the home page, two nested for-loops are used to iterate over each news category and the corresponding news articles. This allows for new categories to be added or deleted from the webpage easily with minimal change in code
 A search form at the bottom of the webpage sends a HTML Get request to the /news/<topic> URL with the user input as the topic parameter. The home page is then rerouted to the news page displayed a list of curated articles belonging to the user-specified category
 In the news page, a similar for-loop function is used to iterate over each news article before displaying them in a single-column card format
 
-##Requirements
+## Requirements
 - Python 3.6 or higher
 - Flask installation
 - Reqiests library
