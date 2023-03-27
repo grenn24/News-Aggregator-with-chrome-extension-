@@ -206,7 +206,7 @@ input[type=text]:focus {
     box-shadow: 0 0 6px #4CAF50;
   }
 
-/* Styling for search bar icon */
+/* Styling for search bar icon at the left-hand side */
 .search-icon {
     position: relative;
     width: 65px;
@@ -216,4 +216,28 @@ input[type=text]:focus {
     transform: translateY(40%);
     transition: all 0.3s ease;
     opacity: 50%;
+  }
+
+/* Styling and animated effect for footer section of the webpage */
+footer {
+    background-color: #f2f2f2;
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+footer.visible {
+    transform: translateY(0);
+  }
+
+footer.invisible {
+    transform: translateY(100%);
   }
