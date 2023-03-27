@@ -2,7 +2,7 @@
 
 News Aggregator webpage that displays news articles from various categories, developed using front-end HTML and back-end Python using Flask framework
 
-## Functions
+# Functions
 - Extracts various news articles from separate customisable categories and the latest articles from the general category
 - Provides a neat summary of every news article for easy reading
 - Displays each article in a modern card layout for easy viewing
