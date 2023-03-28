@@ -46,4 +46,11 @@ In the news and search page, a similar for-loop function is used to iterate over
 - Requests library
 - Unique NewsAPI key (or any News Endpoint URL)
 
+# Installation
+- Download the 'News Aggregator.crx' file in the root folder
+- In Google Chrome, type "chrome://extensions" to enter the extensions page
+- Toggle the 'Developer Mode' switch on
+- Drag and drop the 'News Aggregator.crx' file into the extensions page
+- Click 'Add Extension' to begin the installation process
+
 Application Web Host: https://boiled-bubbly-poultry.glitch.me/
