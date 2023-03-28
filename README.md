@@ -27,9 +27,9 @@ The list of news articles are transferred over to the home.html template as argu
 Fetches a list of news articles belonging to a specific topic listed under navigation pane.\
 News topic parameter and article list are passed down to the news.html template as arguments.
 
-3. **News Route '/News/[topic]'**
+3. **Search Route '/News/Search/[keyword]'**
 
-Fetches a list of news articles belonging to a specific keyword based on search input specified by the user.\
+Fetches a list of news articles belonging to a specific keyword based on search input by the user.\
 News keyword parameter and article list are passed down to the search.html template as arguments.
 
 ## HTML Code
