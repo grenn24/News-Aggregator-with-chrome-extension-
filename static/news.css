@@ -96,9 +96,8 @@ body {
 
 /* Styling for news article images contained inside the card */
 .card-img img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
 /* Styling for news article hyperlink contained inside card */
