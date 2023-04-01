@@ -14,6 +14,7 @@ img {
 img[src=""],
 img[src="None"] {
     height: 20;
+    display: none;
 }
 
 /* Styling for header section of the webpage */
