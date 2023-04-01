@@ -11,6 +11,11 @@ img {
     max-width: 100%;
   }
 
+img[src=""],
+img[src="None"] {
+    display: none;
+}
+
 /* Styling for header section of the webpage */
 header {
       background-color: #b08400;
