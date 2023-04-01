@@ -13,7 +13,6 @@ img {
 
 img[src=""],
 img[src="None"] {
-    height: 20;
     display: none;
 }
 
